@@ -1,6 +1,8 @@
+#wykonane przez Mateusz Kowalski i Kacper Chadzyjanidis
+
 import threading
 import socket
-host = '192.168.1.111'
+host = socket.gethostname()
 port = 5900
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((host, port))
